@@ -1,0 +1,547 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Jumpshot AI - Your Personal AI Basketball Shooting Coach"
+  description="Get instant AI-powered feedback on your basketball jumpshot. Analyze your form, track progress, and improve faster than ever. No expensive coaches needed."
+>
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-lg border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <img src="/logo.png" alt="Jumpshot AI Logo" class="w-8 h-8" />
+        <span class="text-xl font-bold text-gray-900">Jumpshot AI</span>
+      </a>
+      <a
+        href="#download"
+        class="bg-black text-white px-5 py-2.5 rounded-full font-medium text-sm hover:bg-gray-800 transition-colors flex items-center gap-2"
+      >
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+        </svg>
+        App Store
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section - Cal AI Style -->
+  <section class="pt-32 pb-20 px-6 bg-[#f5f5f7]">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left content -->
+        <div>
+          <!-- Social proof pill -->
+          <div class="inline-flex items-center gap-3 bg-white rounded-full px-4 py-2 shadow-sm mb-8">
+            <div class="flex -space-x-2">
+              <img src="/screenshots/marcus.png" alt="" class="w-8 h-8 rounded-full object-cover border-2 border-white" />
+              <img src="/screenshots/jordan.png" alt="" class="w-8 h-8 rounded-full object-cover border-2 border-white" />
+              <img src="/screenshots/coach-davis.png" alt="" class="w-8 h-8 rounded-full object-cover border-2 border-white" />
+            </div>
+            <span class="text-sm text-gray-600">Loved by players with ⭐ 5.0 rating</span>
+          </div>
+
+          <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6 text-gray-900">
+            Meet Jumpshot AI<br />
+            <span class="text-gray-500">Perfect your shot with AI feedback</span>
+          </h1>
+
+          <p class="text-lg text-gray-600 mb-8 max-w-lg">
+            Meet Jumpshot AI, the AI-powered app for basketball players. Record your shot, get instant analysis, and receive personalized coaching tips to improve your form.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#download"
+              class="inline-flex items-center gap-3 bg-black text-white px-6 py-4 rounded-xl font-medium hover:bg-gray-800 transition-all"
+            >
+              <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+              </svg>
+              <div class="text-left">
+                <div class="text-xs opacity-70">Download on the</div>
+                <div class="text-base font-semibold -mt-0.5">App Store</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right content - Phone mockups -->
+        <div class="relative flex justify-center items-center">
+          <!-- Main phone -->
+          <div class="relative z-10">
+            <div class="w-[280px] md:w-[300px] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-gray-900 bg-gray-900">
+              <img
+                src="/screenshots/recording.png"
+                alt="Recording your shot"
+                class="w-full"
+              />
+            </div>
+          </div>
+          <!-- Second phone (tilted) -->
+          <div class="absolute right-0 md:right-[-60px] top-10 transform rotate-6 z-20">
+            <div class="w-[200px] md:w-[220px] rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-gray-900 bg-gray-900">
+              <img
+                src="/screenshots/shot-tips.png"
+                alt="Shot analysis tips"
+                class="w-full"
+              />
+            </div>
+          </div>
+          <!-- Decorative arrow -->
+          <svg class="absolute bottom-20 right-10 w-16 h-16 text-gray-400 hidden lg:block" fill="none" stroke="currentColor" viewBox="0 0 100 100">
+            <path d="M20 80 Q 50 20 80 50" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+            <path d="M75 45 L 82 52 L 72 55" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Section - Cal AI Style -->
+  <section class="py-24 px-6 bg-[#f5f5f7]">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900">
+        Why choose Jumpshot AI?
+      </h2>
+      <p class="text-xl text-gray-500 text-center mb-16 max-w-2xl mx-auto">
+        Jumpshot AI is the most advanced basketball shooting coach in your pocket.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-3xl p-8 shadow-sm">
+          <div class="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-2xl">🎯</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">AI-Powered Analysis</h3>
+          <p class="text-gray-500">
+            Our AI watches every frame of your shot and identifies exactly what needs improvement - just like a pro coach would.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-3xl p-8 shadow-sm">
+          <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-2xl">❤️</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">Personalized Feedback</h3>
+          <p class="text-gray-500">
+            Get tips tailored to YOUR form. No generic advice - specific drills and corrections for your unique shooting mechanics.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-3xl p-8 shadow-sm">
+          <div class="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-2xl">📈</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">Track Your Progress</h3>
+          <p class="text-gray-500">
+            Monitor your improvement over time with detailed analytics. See your form rating improve session after session.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works - Tabbed Section -->
+  <section id="how-it-works" class="py-24 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900">
+        How does Jumpshot AI work?
+      </h2>
+
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <!-- Left - Phone mockup -->
+        <div class="flex justify-center">
+          <div class="relative">
+            <div class="w-[280px] md:w-[320px] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-gray-900 bg-gray-900">
+              <img
+                id="how-it-works-image"
+                src="/screenshots/recording.png"
+                alt="How it works"
+                class="w-full transition-opacity duration-300"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Right - Tabbed content -->
+        <div class="space-y-4">
+          <!-- Tab 1 -->
+          <button
+            class="how-tab w-full text-left p-6 rounded-2xl border-2 border-gray-900 bg-gray-50 transition-all"
+            data-image="/screenshots/recording.png"
+            data-active="true"
+          >
+            <h3 class="text-xl font-bold mb-2 text-gray-900">1. Record Your Shot</h3>
+            <p class="text-gray-500">
+              Set up your phone and hit record. The app guides you with a 60-second timer and positioning tips. Works from any angle.
+            </p>
+          </button>
+
+          <!-- Tab 2 -->
+          <button
+            class="how-tab w-full text-left p-6 rounded-2xl border-2 border-gray-200 hover:border-gray-300 transition-all"
+            data-image="/screenshots/session-summary.png"
+          >
+            <h3 class="text-xl font-bold mb-2 text-gray-900">2. Get Instant Analysis</h3>
+            <p class="text-gray-500">
+              Our AI analyzes every shot in your video. Get a form rating, see what you did well, and identify areas that need work.
+            </p>
+          </button>
+
+          <!-- Tab 3 -->
+          <button
+            class="how-tab w-full text-left p-6 rounded-2xl border-2 border-gray-200 hover:border-gray-300 transition-all"
+            data-image="/screenshots/shot-tips.png"
+          >
+            <h3 class="text-xl font-bold mb-2 text-gray-900">3. Review Shot-by-Shot Tips</h3>
+            <p class="text-gray-500">
+              Tap any shot to see detailed feedback. Get specific tips on your stance, elbow position, release, and follow-through.
+            </p>
+          </button>
+
+          <!-- Tab 4 -->
+          <button
+            class="how-tab w-full text-left p-6 rounded-2xl border-2 border-gray-200 hover:border-gray-300 transition-all"
+            data-image="/screenshots/progress.png"
+          >
+            <h3 class="text-xl font-bold mb-2 text-gray-900">4. Track Your Progress</h3>
+            <p class="text-gray-500">
+              Watch your form rating improve over time. See trends, compare sessions, and stay motivated with visual progress tracking.
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section - Cal AI Style -->
+  <section class="py-24 px-6 bg-[#f5f5f7]">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900">
+        Better than the alternatives
+      </h2>
+      <p class="text-xl text-gray-500 text-center mb-16 max-w-2xl mx-auto">
+        See how Jumpshot AI compares to traditional ways of improving your shot.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- vs Coaches -->
+        <div class="bg-white rounded-3xl p-8 shadow-sm">
+          <div class="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-2xl">💵</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-gray-900">vs. Private Coach</h3>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-600"><strong class="text-gray-900">90% cheaper</strong> than hourly rates</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-600"><strong class="text-gray-900">Available 24/7</strong></span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-600"><strong class="text-gray-900">Instant feedback</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- vs YouTube -->
+        <div class="bg-white rounded-3xl p-8 shadow-sm">
+          <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-2xl">📺</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-gray-900">vs. YouTube</h3>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-600"><strong class="text-gray-900">Personalized</strong> to you</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-600"><strong class="text-gray-900">Sees your form</strong></span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-600"><strong class="text-gray-900">Tracks progress</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- vs Self-Filming -->
+        <div class="bg-white rounded-3xl p-8 shadow-sm">
+          <div class="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center mb-6">
+            <span class="text-2xl">📱</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4 text-gray-900">vs. Self-Filming</h3>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-600"><strong class="text-gray-900">Expert analysis</strong></span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-600"><strong class="text-gray-900">Clear explanations</strong></span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span class="text-gray-600"><strong class="text-gray-900">Drills to improve</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section - Tabbed -->
+  <section class="py-24 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900">
+        What does Jumpshot AI include?
+      </h2>
+
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <!-- Left - Phone mockup -->
+        <div class="flex justify-center order-2 lg:order-1">
+          <div class="relative">
+            <div class="w-[280px] md:w-[320px] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-gray-900 bg-gray-900">
+              <img
+                id="features-image"
+                src="/screenshots/home.png"
+                alt="Features"
+                class="w-full transition-opacity duration-300"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Right - Feature cards -->
+        <div class="space-y-4 order-1 lg:order-2">
+          <!-- Feature 1 -->
+          <button
+            class="feature-tab w-full text-left p-6 rounded-2xl border-2 border-gray-900 bg-white transition-all"
+            data-image="/screenshots/home.png"
+            data-active="true"
+          >
+            <h3 class="text-xl font-bold mb-2 text-gray-900">Track Your Sessions</h3>
+            <p class="text-gray-500">
+              See your practice history at a glance. Track practices this week, view your form and consistency scores, and access past sessions instantly.
+            </p>
+          </button>
+
+          <!-- Feature 2 -->
+          <button
+            class="feature-tab w-full text-left p-6 rounded-2xl border-2 border-gray-200 bg-white hover:border-gray-300 transition-all"
+            data-image="/screenshots/session-summary.png"
+          >
+            <h3 class="text-xl font-bold mb-2 text-gray-900">AI Coach's Report</h3>
+            <p class="text-gray-500">
+              Get a detailed summary after each session with your form rating, total shots analyzed, and personalized coaching insights.
+            </p>
+          </button>
+
+          <!-- Feature 3 -->
+          <button
+            class="feature-tab w-full text-left p-6 rounded-2xl border-2 border-gray-200 bg-white hover:border-gray-300 transition-all"
+            data-image="/screenshots/progress.png"
+          >
+            <h3 class="text-xl font-bold mb-2 text-gray-900">Progress Analytics</h3>
+            <p class="text-gray-500">
+              Monitor your improvement with beautiful charts. See your rating progress over 90 days, 6 months, 1 year, or all time.
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-24 px-6 bg-[#f5f5f7]">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900">
+        What players are saying
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-3xl p-8 shadow-sm">
+          <div class="flex items-center gap-1 mb-4">
+            <span class="text-yellow-400">★★★★★</span>
+          </div>
+          <p class="text-gray-600 mb-6">
+            "I've been trying to fix my release for months watching YouTube. 5 minutes with this app and it told me exactly what was wrong — my guide hand was pushing the ball."
+          </p>
+          <div class="flex items-center gap-3">
+            <img src="/screenshots/marcus.png" alt="Marcus T." class="w-10 h-10 rounded-full object-cover" />
+            <div>
+              <p class="font-bold text-gray-900">Marcus T.</p>
+              <p class="text-sm text-gray-500">Rec League Player</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-8 shadow-sm">
+          <div class="flex items-center gap-1 mb-4">
+            <span class="text-yellow-400">★★★★★</span>
+          </div>
+          <p class="text-gray-600 mb-6">
+            "As a coach, I use this with my players between sessions. They get feedback even when I'm not there. It's like giving them homework that actually helps."
+          </p>
+          <div class="flex items-center gap-3">
+            <img src="/screenshots/coach-davis.png" alt="Coach Davis" class="w-10 h-10 rounded-full object-cover" />
+            <div>
+              <p class="font-bold text-gray-900">Coach Davis</p>
+              <p class="text-sm text-gray-500">AAU Coach</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-8 shadow-sm">
+          <div class="flex items-center gap-1 mb-4">
+            <span class="text-yellow-400">★★★★★</span>
+          </div>
+          <p class="text-gray-600 mb-6">
+            "My dad can't afford a shooting coach for me. This app gives me the same type of feedback. My percentage went from 32% to 41% in two months."
+          </p>
+          <div class="flex items-center gap-3">
+            <img src="/screenshots/jordan.png" alt="Jordan K." class="w-10 h-10 rounded-full object-cover" />
+            <div>
+              <p class="font-bold text-gray-900">Jordan K.</p>
+              <p class="text-sm text-gray-500">8th Grade Player</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="download" class="py-24 px-6 bg-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+        Start improving today
+      </h2>
+      <p class="text-xl text-gray-500 mb-10">
+        Download Jumpshot AI for free. Your first analysis is on us.
+      </p>
+
+      <a
+        href="https://apps.apple.com/app/jumpshot-ai"
+        class="inline-flex items-center gap-3 bg-black text-white px-8 py-5 rounded-2xl font-medium text-lg hover:bg-gray-800 transition-all"
+      >
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+        </svg>
+        <div class="text-left">
+          <div class="text-xs opacity-70">Download on the</div>
+          <div class="text-lg font-semibold -mt-0.5">App Store</div>
+        </div>
+      </a>
+
+      <p class="mt-6 text-sm text-gray-500">
+        Free to download • First analysis free • Premium from $4.99/month
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 bg-gray-900">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+          <img src="/logo.png" alt="Jumpshot AI" class="w-8 h-8" />
+          <span class="text-xl font-bold text-white">Jumpshot AI</span>
+        </div>
+
+        <div class="flex items-center gap-8 text-sm text-gray-400">
+          <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="/terms" class="hover:text-white transition-colors">Terms of Service</a>
+          <a href="mailto:support@jumpshotai.app" class="hover:text-white transition-colors">Contact</a>
+        </div>
+
+        <p class="text-sm text-gray-500">
+          © 2025 Supersparks Apps Ltd.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tab switching JavaScript -->
+  <script>
+    // How it works tabs
+    const howTabs = document.querySelectorAll('.how-tab');
+    const howImage = document.getElementById('how-it-works-image');
+
+    howTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Update active states
+        howTabs.forEach(t => {
+          t.classList.remove('border-gray-900', 'bg-gray-50');
+          t.classList.add('border-gray-200');
+          t.removeAttribute('data-active');
+        });
+        tab.classList.add('border-gray-900', 'bg-gray-50');
+        tab.classList.remove('border-gray-200');
+        tab.setAttribute('data-active', 'true');
+
+        // Update image
+        if (howImage) {
+          howImage.style.opacity = '0';
+          setTimeout(() => {
+            howImage.src = tab.dataset.image;
+            howImage.style.opacity = '1';
+          }, 150);
+        }
+      });
+    });
+
+    // Features tabs
+    const featureTabs = document.querySelectorAll('.feature-tab');
+    const featuresImage = document.getElementById('features-image');
+
+    featureTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Update active states
+        featureTabs.forEach(t => {
+          t.classList.remove('border-gray-900');
+          t.classList.add('border-gray-200');
+          t.removeAttribute('data-active');
+        });
+        tab.classList.add('border-gray-900');
+        tab.classList.remove('border-gray-200');
+        tab.setAttribute('data-active', 'true');
+
+        // Update image
+        if (featuresImage) {
+          featuresImage.style.opacity = '0';
+          setTimeout(() => {
+            featuresImage.src = tab.dataset.image;
+            featuresImage.style.opacity = '1';
+          }, 150);
+        }
+      });
+    });
+  </script>
+</Layout>
